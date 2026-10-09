@@ -1,0 +1,15 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+solc = "0.8.28"
+
+[fuzz]
+runs = 1000
+
+[fmt]
+line_length = 120
+ignore = ["test/legacy/**"]
+
+[lint]
+lint_on_build = false
