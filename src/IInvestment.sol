@@ -7,6 +7,8 @@ interface IInvestment {
     error Investment_ExceedsTarget();
     error Investment_InvalidStatus(uint256 state, uint256 expected_state);
     error Investment_DistributionAmountNotSet();
+    error Investment__NotHelper();
+    error Investment__InvalidRange();
 
     /// Events
     event ROIPhaseAndDistributionAmount(uint256 roiPhase, uint256 distributionAmount);
